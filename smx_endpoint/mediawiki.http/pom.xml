@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>de.unistuttgart.iaas.mediawiki</groupId>
+    <artifactId>root</artifactId>
+    <packaging>pom</packaging>
+	<version>1.0</version>
+    <name>MediaWiki ServiceMix :: Endpoint Integration Root Project</name>
+
+    <modules>
+    <module>mediawiki.camel.http.endpoint</module>
+    <module>mediawiki.camel.http.endpoint.2</module>
+    <module>mediawiki.camel.http.endpoint.3</module>
+    <module>mediawiki.camel.http.endpoint.4</module>
+  </modules>
+
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.servicemix</groupId>
+				<artifactId>servicemix-http</artifactId>
+				<version>${servicemix.http.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.camel</groupId>
+				<artifactId>camel-http</artifactId>
+				<version>${camel.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.camel</groupId>
+				<artifactId>camel-jetty</artifactId>
+				<version>${camel.version}</version>
+			</dependency>
+		</dependencies>
+		
+	</dependencyManagement>
+	
+	<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<servicemix.http.version>2013.01</servicemix.http.version>
+		<camel.version>2.10.3</camel.version>
+		<!--<servicemix.http.version>2011.02</servicemix.http.version>-->
+    </properties>
+
+    <!-- Meta information -->
+
+    <description/>
+    <url/>
+
+    <developers>
+        <developer>
+            <id/>
+            <name/>
+            <roles>
+                <role/>
+            </roles>
+            <url/>
+        </developer>
+    </developers>
+    <contributors/>
+
+    <ciManagement/>
+    <issueManagement/>
+    <distributionManagement/>
+    <scm/>
+
+    <licenses/>
+    <mailingLists/>
+    <organization/>
+</project>
